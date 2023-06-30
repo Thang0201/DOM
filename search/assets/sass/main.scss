@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ddd;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+
+  .search-field {
+    width: 7rem;
+    height: 7rem;
+    background-color: #242628;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      color: #fff;
+      padding: 20px 100px 20px 35px;
+      font-size: 40px;
+    }
+
+    button {
+      color: #242628;
+      outline: none;
+      border: none;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      font-size: 30px;
+    }
+  }
+  .search-field.open {
+    width: 42rem;
+  }
+}
+

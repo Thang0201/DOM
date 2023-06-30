@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Module</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="tab-module">
+      <ul class="tab-list">
+        <li class="tab-item active">
+          <i class="fa-solid fa-code"></i>
+          <span>React</span>
+        </li>
+        <li class="tab-item">
+          <i class="tab-icon fas fa-cog"></i>
+          <span>Angular</span>
+        </li>
+        <li class="tab-item">
+          <i class="tab-icon fas fa-plus-circle"></i>
+          <span>Ember</span>
+        </li>
+        <li class="tab-item">
+          <i class="tab-icon fas fa-pen-nib"></i>
+          <span>Vue.js</span>
+        </li>
+        <div class="line"></div>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active">
+          <h2>React</h2>
+          <p>
+            React makes it painless to create interactive UIs. Design simple
+            views for each state in your application, and React will efficiently
+            update and render just the right components when your data changes.
+          </p>
+        </div>
+        <div class="tab-pane">
+          <h2>Angular</h2>
+          <p>
+            Angular is an application design framework and development platform
+            for creating efficient and sophisticated single-page apps.
+          </p>
+        </div>
+        <div class="tab-pane">
+          <h2>Vue.js</h2>
+          <p>
+            Vue (pronounced /vjuː/, like view) is a progressive framework for
+            building user interfaces. Unlike other monolithic frameworks, Vue is
+            designed from the ground up to be incrementally adoptable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.tab-module {
+  margin: 15% auto 0;
+  max-width: 720px;
+}
+.tab-module ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+.tab-module ul li {
+  min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #c23564;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.tab-module ul li:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.tab-module ul li.active {
+  opacity: 1;
+}
+.tab-module ul i {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+.tab-module ul .line {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 13.5rem;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.tab-content {
+  padding: 28px 0;
+}
+.tab-content .tab-pane {
+  color: #333;
+  display: none;
+}
+.tab-content .tab-pane h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.tab-content .tab-pane.active {
+  display: block;
+}
