@@ -36,3 +36,14 @@ next.addEventListener("click", (e) => {
   else nowIdx++;
   setNowIndex(nowIdx);
 });
+document.addEventListener("keydown", (e) => {
+  if (e.which == 37) {
+    if (nowIdx == 0) nowIdx = imageList.length - 1;
+    else nowIdx--;
+    setNowIndex(nowIdx);
+  } else if (e.which == 39) {
+    if (nowIdx == imageList.lenght - 1) nowIdx == 0;
+    else nowIdx++;
+    setNowIndex(nowIdx);
+  }
+});
